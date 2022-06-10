@@ -1,0 +1,14 @@
+    <%-include("../partials/header"); %>
+    <h1>Edit Product</h1>
+
+    <form action="/products/edit/<%=product._id%>" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" value="<%=product.name%>"/>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-info" type="submit">Edit Product</button>
+        </div>
+    </form>
+    
+    <%-include("../partials/footer"); %>
